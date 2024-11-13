@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- 
+	Student Name: Getahun Endalamaw 
+	File Name: contact.html
+	Today's Date: 11/11/2024
+ -->
+<html lang="en">
+<head>
+	<title>Get Go Auto Sales & Repair: Contact</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Emblema+One|Lora&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <header>
+            <h1>Get Go Auto</h1>
+            <h3>Sales And Repair of Cars</h3>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="service.html">Services</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content to the webpage -->
+        <main>
+
+            <div id="contact">
+
+                <h2>You can reach us at:</h2>
+                <p class="tel-link round mobile"><a href="tel:8145558989">(814) 555-8989</a></p>
+                <p class="tab-desk">(605) 000-0000</p>
+                <p>Email: <a href="mailto:contact@getgo.net" class="link">contact@getgo.net</a></p>
+                <p>Address: <a href="https://goo.gl/maps/BTJzjc2tALd4RDWA8" target="_blank" class="link">412 E Nth St Sioux Falls,SD.</a></p>
+
+            </div>
+
+            <div id="form">
+                <h2>Complet the form below and we will contact you soon. </h2>
+                <form class="form-grid"><!--start form-->
+
+
+                    <fieldset>
+                        <legend>contact informotion</legend>
+                        
+                        <label for="fName">First Name:</label>
+                        <input type="text"name="fName"id="fName">
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text"name="lName"id="lName">
+
+                        <label for="email"> Email:</label>
+                        <input type="email"name="email"id="email">
+
+                        <label for="phone"> phone:</label>
+                        <input type="tel" id="phone" name="phone">
+
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Service Requst</legend>
+                        <p>I would like more information about:</p>
+                        <label for="oil"></label><input type="radio" name="info" id="oil" value="Oil Change">Oil Change</label>
+                        <label for="Tire"></label><input type="radio" name="info" id="tire" value="Tire Rotation">Tire Rotation</label>
+                        <label for="Break"></label><input type="radio" name="info" id="Break" value="Break Chang">Break Change</label>
+                        <label for="other"></label><input type="radio" name="info" id="other" value="Other">Other,please specify below</label>
+                        <label for="questions">what questions do you have for us?</label>
+                        <textarea id="questions" name="questions" rows="5" cols="35"> </textarea>
+                        
+                    </fieldset>
+                    
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                    <input type="reset" id="Reset"  value="Reset"  class="btn" >
+                
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2024. All Rights Reserved.</p>
+            <p><a href="mailto:contact@getgo.net">contact@getgo.net</a></p>
+        </footer>
+        
+    </div>
+	
+</body>
+</html>

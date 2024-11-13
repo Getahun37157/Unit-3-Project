@@ -1,0 +1,432 @@
+/*
+Author: Getahun Endalamaw
+Date: 1/26/2020
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, div, img, ul, aside, section, article, audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #e4f6ec;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule show mobile class and hide tab-desk class */
+
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+/* Style rules for header area */
+header {
+    text-align: center;
+    color: #1d2a14;
+    padding: 1%;
+}
+header h1 {
+    font-size: 3em;
+    font-family: 'Merriweather', serif;
+    text-shadow: 4px 4px 12px #373749;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 1.25em;
+    font-family: Futura, Arial, sans-serif;
+}
+.mobile h1, .mobile h3 {
+    padding: 2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: 'Emblema One', cursive;
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+}
+
+
+/* Style rules for navigation area */
+nav {
+    background-color: #14142a;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    border-top: 0.5px solid #f6eee4;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    font-family: 'Lora', serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+}
+
+#services{
+    display: none;
+}
+
+
+
+video{
+    margin: 0 auto 4%,
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+
+.tel-link {
+    background-color: #19142a;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*style rule for form elements*/
+#form{
+    margin-top: 2%;
+    padding: 2%;
+}
+
+#form h2{
+    text-align: center;
+}
+
+fieldset,input,select,textarea{
+    margin-bottom:2% ;
+    
+}
+fieldset legend{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label{
+    display:block;
+    padding-top: 3%;
+}
+
+
+form #submit{
+    margin:0 auto;
+    border:none;
+    display:block;
+    padding: 1%;
+    background-color:  #5d783a;;
+    color:#f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+form #Reset{
+    margin:0 auto;
+    border:none;
+    display:block;
+    padding: 1%;
+    background-color: #5d783a;
+    color:#f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #14142a;
+    color: #f6eee4;
+    padding: 1% 0;
+}
+
+footer a {
+    color: #f6eee4;
+    text-decoration: none;
+}
+
+
+/* Style rule show mobile-tablet class*/
+.mobile-tablet {
+    display: block;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+ 
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 0.5em;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    /* Tablet viwport:style rule for form elements */
+    form{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    
+     /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+     .desktop{
+        display:block;
+     }
+        .mobile{
+            display: none;
+         }
+
+    /* Desktop viw port: Style rules for table*/
+    #services{
+        display: block;
+
+    }
+    table{
+        border:1px solid #2a1f14;
+        border-collapse:collapse;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right:auto; 
+    } 
+      
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+
+    }
+
+    th,td{
+        border: 1px solid #2a1f14;
+        padding: 1%;
+    }
+
+    th{
+        background-color: #14182a;
+        color: #ffffff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd){
+        background-color:#5d3a78;
+    }
+
+    
+     
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    
+     nav li a {
+            display: block;
+        color: #f6eee4;
+        padding-top :1em;
+        padding-bottom: 1em;
+        padding-left: 4em;
+        padding-right: 4em;
+        }
+        
+     nav li a:link {
+            color: #fff;
+        }
+        
+     nav li a:hover {
+            color: #74a9be;
+        }
+        
+     nav li a:active {
+            color: #8cb3d9;
+        background-color: #f6eee4;
+        opacity: 0.5;
+        }
+    
+    
+    
+    /* Desktop Viewport: Style rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
+    
+    .grid {
+        grid-template-columns: auto auto auto;
+        grid-gap: 30px;
+    }
+    
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+
+    /* Desktop viwport: style rules for form elements*/
+    form{
+        width:auto
+    }
+    .form-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap:20px;
+
+    }
+
+
+    .btn{
+        grid-column: 1/span 2;
+    }
+
+    
+
+    
+    
+
+}
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+    
+    body {
+        background: linear-gradient(#f6eee4, #78593a);
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
+    }
+        
+    main {
+        background-color: #f6eee4;
+    }
+    
+    .grid {
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+    
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
